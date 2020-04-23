@@ -47,6 +47,12 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": 10
+    },
+    {
+      "name": "Deijah",
+      "image": "https://www.vippng.com/png/detail/437-4370761_free-png-hello-kitty-sanrio-characters-hello-kitty.png",
+      "likes": "0",
+      "id": 9
     }
   ]
 }
