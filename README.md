@@ -33,7 +33,7 @@ Each card should have the following child elements:
   * `button` tag with a class "like-btn"
 
 After all of that, the toy card should resemble:
-
+<!-- 
 ```html
   <div class="card">
     <h2>Woody</h2>
@@ -41,7 +41,7 @@ After all of that, the toy card should resemble:
     <p>4 Likes </p>
     <button class="like-btn">Like <3</button>
   </div>
-```
+``` -->
 
 ## Add a New Toy
 
