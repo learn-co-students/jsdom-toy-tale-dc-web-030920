@@ -45,7 +45,12 @@ e.preventDefault()
         .then ((response) => {
           return response.json()
         })
-        .then((toy) => displayToy(toy))
+        .then((toy) => {
+          let form = document.querySelector(".add-toy-form")
+          displayToy(toy)
+          form.reset()
+        })
+      
 };
 
 function fetchToys(){
@@ -82,7 +87,28 @@ function displayToy(toy){
   div.appendChild(button)
   button.addEventListener('click', addLike)
 
+
+  let deleteBtn = document.createElement('button')
+  deleteBtn.className = "delete-btn"
+  deleteBtn.innerText = "X"
+  div.appendChild(deleteBtn)
+  deleteBtn.addEventListener('click', deleteCard)
+
+
 }
+
+function deleteCard(e){
+  let id = e.target.parentElement.id
+  let card = e.target.parentElement
+  fetch(`http://localhost:3000/toys/${id}` , {
+  header: {"Content-Type":"application/json"},
+  method: "DELETE",
+  })
+  .then(card.remove())
+}
+
+
+
 
 function addLike(e){
  let div = e.target.parentElement
