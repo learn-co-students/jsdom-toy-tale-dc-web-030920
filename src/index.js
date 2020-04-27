@@ -18,16 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", addNewToy)
 });
 
-function addNewToy(event){
+function addNewToy(event){                           //this is how to create new object
 
   let toy_obj = {
-    "name": event.target.name.value,
-    "image": event.target.image.value
+    "name": event.target.name.value,               // this is is for when u give a new a obj a name that s how u get that name
+    "image": event.target.image.value             // same here 
   
   }
-  event.preventDefault()
-  fetch("http://localhost:3000/toys", {
-    method: "POST",
+  event.preventDefault()                        // make it not disapear
+  fetch("http://localhost:3000/toys", {        // then fetch the new obj
+    method: "POST",                           //is it a post 
     headers: {"Content-Type": "application/json",
     Accept: "application/json"},
     body: JSON.stringify(toy_obj)
