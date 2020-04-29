@@ -47,6 +47,12 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Uzoma",
+      "image": "https://pbs.twimg.com/profile_images/431493572693880833/9FqraCQS.jpeg",
+      "likes": 20,
+      "id": 9
     }
   ]
 }
